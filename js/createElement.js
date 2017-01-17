@@ -15,7 +15,7 @@ const generateItemList = (list) => (
 );
 
 // Create a root element using React.createElement
-// React.createElement('tagname', { pass in attrs, ie: className: 'main' }, 'html content')
+// createElement(string/ReactClass type, [object props], [children ...]) -> ReactElement
 const rootElement =
   React.createElement('div', {},
     React.createElement('h1', {}, 'My List'),
