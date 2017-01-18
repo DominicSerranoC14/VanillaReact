@@ -31,16 +31,20 @@ const ContactForm = React.createClass({
   },
   render: function() {
     return (
-      React.createElement('form', {},
+      React.createElement('form', {className: 'contact-form'},
         React.createElement('input', {
-          type: 'text', placeholder: 'Name', value: this.props.contact.name
+          type: 'text', placeholder: 'Name', value: this.props.contact.name,
+          className: 'form-item'
         }),
         React.createElement('input', {
-          type: 'text', placeholder: 'Age', value: this.props.contact.age
+          type: 'text', placeholder: 'Age', value: this.props.contact.age,
+          className: 'form-item'
         }),
         React.createElement('textarea', {
-          placeholder: 'Description', value: this.props.contact.description}),
-        React.createElement('button', {type: 'submit'}, 'Submit')
+          placeholder: 'Description', value: this.props.contact.description,
+          className: 'form-item'
+        }),
+        React.createElement('button', {type: 'submit', className: 'form-item'}, 'Submit')
       )
     )
   }

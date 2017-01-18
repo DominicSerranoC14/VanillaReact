@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: auto;
+  border: black 2px solid;
+}
+
+.form-item {
+  margin: .5rem;
+}
